@@ -1,6 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@300;700;900&display=swap");
 body {
-  background-color: red;
-  padding: 0;
+  background-color: #FAFAFA;
+  padding: 30px;
   margin: 0;
+}
+
+h1 {
+  color: #333333;
+  letter-spacing: 4px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+p {
+  color: #333333;
+  font-family: 'Courier Prime', monospace;
+}
+
+img {
+  max-width: 15%;
+  display: block;
+}
+
+.intro {
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 15%;
+}
+
+.intro-item {
+  padding: 2%;
+  text-align: center;
+}
+
+.intro-img {
+  margin: 0 auto;
+}
+
+hr.hyp {
+  width: 5%;
+  height: 3px;
+  background-color: #9b9b9b;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+hr.divide {
+  border: 2px dotted #9b9b9b;
+  border-style: none none dashed;
 }
 /*# sourceMappingURL=styles.css.map */
