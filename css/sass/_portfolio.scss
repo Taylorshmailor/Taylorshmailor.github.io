@@ -1,0 +1,33 @@
+// portfolio class
+.portfolio {
+    padding: 5%;
+    margin: auto;
+}
+
+.portfolio-title {
+    padding-bottom: 5%;
+    margin: auto;
+    font-weight: 700;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20%;
+    column-gap: 4%;
+    
+}
+
+.project-container{
+    padding: 20px;
+    text-align: center;
+    background-color: $primary-background;
+}
+
+.project-container-img {
+    background-color: $primary-project;
+}
+
+  
+
+
