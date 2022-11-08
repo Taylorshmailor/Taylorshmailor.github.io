@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@300;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #FAFAFA;
-  padding: 30px;
-  margin: 0;
 }
 
 h1 {
@@ -20,6 +25,52 @@ p {
 img {
   max-width: 15%;
   display: block;
+}
+
+hr.divide {
+  border: 2px dashed #9b9b9b;
+  border-style: none none dashed;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.nav {
+  padding-right: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  border-left: 1.5px dashed #9b9b9b;
+  border-bottom: 1.5px dashed #9b9b9b;
+}
+
+li:last-child {
+  border-left: none;
+}
+
+li a {
+  display: block;
+  color: #333333;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-family: 'Courier Prime', monospace;
+}
+
+li a:hover:not(.active) {
+  color: #c7c7c7;
+}
+
+.active {
+  background-color: #4A5568;
 }
 
 .intro {
@@ -43,10 +94,5 @@ hr.hyp {
   background-color: #9b9b9b;
   margin-right: auto;
   margin-left: auto;
-}
-
-hr.divide {
-  border: 2px dotted #9b9b9b;
-  border-style: none none dashed;
 }
 /*# sourceMappingURL=styles.css.map */

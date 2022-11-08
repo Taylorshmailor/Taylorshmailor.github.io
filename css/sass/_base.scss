@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@300;700;900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: $primary-background;
-    padding: 30px;
-    margin: 0;
 }
 
 h1 {
@@ -23,30 +27,11 @@ img {
     display: block;
 }
 
-// create intro file 
-.intro {
-    grid-template-columns: auto auto auto;
-    padding: 15%;
-}
-
-.intro-item {
-    padding: 2%;
-    text-align: center;
-}
-
-.intro-img {
-    margin: 0 auto;
-}
-
-hr.hyp {
-    width: 5%;  
-    height: 3px;  
-    background-color: $primary-lines;
-    margin-right: auto;  
-    margin-left: auto;  
-}
 
 hr.divide {
-    border: 2px dotted $primary-lines;
+    border: 2px dashed $primary-lines;
     border-style: none none dashed; 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

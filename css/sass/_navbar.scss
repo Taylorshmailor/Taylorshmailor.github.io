@@ -1,0 +1,41 @@
+// navbar classes
+
+div.nav {
+    padding-right: 5%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: right;
+    border-left: 1.5px dashed $primary-lines;
+    border-bottom: 1.5px dashed $primary-lines;
+}
+  
+li:last-child {
+    border-left: none;
+}
+  
+li a {
+    display: block;
+    color: $primary-text;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
+}
+  
+li a:hover:not(.active) {
+    color: $secondary-hover;
+}
+
+  
+.active {
+    background-color: $primary-hover;
+}
+
