@@ -3,6 +3,14 @@
     display: grid;
     grid-template-columns: auto auto;
     padding: 10% 5% 10% 5%;
+    @media only screen and (min-width: 1440px) {
+        font-size: 30px;
+    }
+
+    @media only screen and (min-width: 430px) {
+        grid-template-columns: auto;
+        row-gap: 5%;
+    }
 }
 
 .bio-blurb {

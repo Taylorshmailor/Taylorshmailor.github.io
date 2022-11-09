@@ -2,11 +2,25 @@
 .intro {
     grid-template-columns: auto auto auto;
     padding: 15%;
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 30px;
+    }
+
+    p {
+        @media only screen and (min-width: 430px) {
+            font-size: 15px;
+        }
+    }
 }
 
 .intro-item {
     padding: 2%;
     text-align: center;
+    @media only screen and (min-width: 430px) {
+        font-size: 20px;
+    }
+
 }
 
 .intro-img {

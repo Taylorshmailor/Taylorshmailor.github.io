@@ -37,6 +37,11 @@ hr.divide {
 div.nav {
   padding-right: 5%;
 }
+@media only screen and (max-width: 430px) {
+  div.nav {
+    display: none;
+  }
+}
 
 ul {
   list-style-type: none;
@@ -63,6 +68,11 @@ li a {
   text-decoration: none;
   font-family: "Courier Prime", monospace;
 }
+@media only screen and (min-width: 1440px) {
+  li a {
+    font-size: 30px;
+  }
+}
 
 li a:hover:not(.active) {
   color: #c7c7c7;
@@ -76,10 +86,25 @@ li a:hover:not(.active) {
   grid-template-columns: auto auto auto;
   padding: 15%;
 }
+@media only screen and (min-width: 1440px) {
+  .intro {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 430px) {
+  .intro p {
+    font-size: 15px;
+  }
+}
 
 .intro-item {
   padding: 2%;
   text-align: center;
+}
+@media only screen and (min-width: 430px) {
+  .intro-item {
+    font-size: 20px;
+  }
 }
 
 .intro-img {
@@ -98,6 +123,11 @@ hr.hyp {
   padding: 5%;
   margin: auto;
 }
+@media only screen and (min-width: 1440px) {
+  .portfolio {
+    font-size: 30px;
+  }
+}
 
 .portfolio-title {
   padding-bottom: 5%;
@@ -112,6 +142,12 @@ hr.hyp {
   -moz-column-gap: 4%;
        column-gap: 4%;
   padding-bottom: 15%;
+}
+@media only screen and (max-width: 430px) {
+  .portfolio-grid {
+    grid-template-columns: auto auto;
+    row-gap: 10%;
+  }
 }
 
 .project-container {
@@ -139,6 +175,17 @@ hr.hyp {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10% 5% 10% 5%;
+}
+@media only screen and (min-width: 1440px) {
+  .bio {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 430px) {
+  .bio {
+    grid-template-columns: auto;
+    row-gap: 5%;
+  }
 }
 
 .bio-blurb {

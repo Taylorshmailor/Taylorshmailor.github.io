@@ -2,6 +2,9 @@
 .portfolio {
     padding: 5%;
     margin: auto;
+    @media only screen and (min-width: 1440px) {
+        font-size: 30px;
+    }
 }
 
 .portfolio-title {
@@ -17,6 +20,12 @@
     row-gap: 30%;
     column-gap: 4%;
     padding-bottom: 15%;
+
+
+    @media only screen and (max-width: 430px) {
+        grid-template-columns: auto auto;
+        row-gap: 10%;
+    }
 }
 
 .project-container{
