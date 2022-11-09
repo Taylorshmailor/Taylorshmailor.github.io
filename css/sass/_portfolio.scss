@@ -10,24 +10,39 @@
     font-weight: 700;
 }
 
+// project class
 .portfolio-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 20%;
+    row-gap: 30%;
     column-gap: 4%;
-    
+    padding-bottom: 15%;
 }
 
 .project-container{
-    padding: 20px;
-    text-align: center;
     background-color: $primary-background;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
 .project-container-img {
     background-color: $primary-project;
+    max-width: 100%;
+    height: 200px;
+    padding: 20px;
 }
 
+.project-title {
+    padding: 5px;
+    text-align: left;
+}
+  
+  
+
+  
   
 
 

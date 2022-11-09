@@ -1,0 +1,15 @@
+// about class
+.bio {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10% 5% 10% 5%;
+}
+
+.bio-blurb {
+    padding-right: 15%;
+    text-align: justify;
+}
+
+.bio-img {
+    margin: 0 auto;
+}
