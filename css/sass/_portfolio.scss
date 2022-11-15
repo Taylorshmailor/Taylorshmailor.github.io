@@ -16,21 +16,20 @@
 // project class
 .portfolio-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 30%;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5%;
     column-gap: 4%;
     padding-bottom: 15%;
 
 
     @media only screen and (max-width: 430px) {
-        grid-template-columns: auto auto;
-        row-gap: 10%;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5%;
     }
 }
 
 .project-container{
     background-color: $primary-background;
-    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
