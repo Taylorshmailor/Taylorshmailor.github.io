@@ -39,20 +39,14 @@ div.nav {
   padding-right: 5%;
 }
 
-@media only screen and (max-width: 430px) {
-  div.nav {
-    display: none;
-  }
-}
-
-ul {
+.nav-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.nav-li {
   float: right;
   border-left: 1.5px dashed #9b9b9b;
   border-bottom: 1.5px dashed #9b9b9b;
@@ -69,12 +63,6 @@ li a {
   padding: 10px 50px;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
-}
-
-@media only screen and (min-width: 1440px) {
-  li a {
-    font-size: 30px;
-  }
 }
 
 li a:hover:not(.active) {
@@ -129,12 +117,6 @@ hr.hyp {
 .portfolio {
   padding: 5%;
   margin: auto;
-}
-
-@media only screen and (min-width: 1440px) {
-  .portfolio {
-    font-size: 30px;
-  }
 }
 
 .portfolio-title {
@@ -206,5 +188,28 @@ hr.hyp {
 .bio-img {
   margin: 0 auto;
   max-width: 40%;
+}
+
+footer {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer-ul {
+  list-style-type: none;
+  margin: 0 5% 0 5%;
+  padding: 0;
+  overflow: hidden;
+  border-top: 1.5px dashed #9b9b9b;
+}
+
+.footer-li {
+  float: right;
+  border-left: 1.5px dashed #9b9b9b;
+}
+
+.footer-img {
+  float: left;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+// footer classes
+footer {
+    align-content: center;
+}
+
+
+
+.footer-ul {
+    list-style-type: none;
+    margin: 0 5% 0 5%;
+    padding: 0;
+    overflow: hidden;
+    border-top: 1.5px dashed $primary-lines;
+}
+  
+.footer-li {
+    float: right;
+    border-left: 1.5px dashed $primary-lines;
+}
+
+.footer-img {
+    float: left;
+    //max-width:100%;
+    height:auto;
+}
+  
+
