@@ -2,8 +2,9 @@
 .bio {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 15% 5% 15% 5%;
+    padding: 10% 12% 10% 12%;
     row-gap: 5%;
+
     // @media only screen and (min-width: 1440px) {
     //     font-size: 30px;
     // }
@@ -16,7 +17,7 @@
 
 .bio-blurb {
     text-align: justify;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .bio-img {
@@ -25,7 +26,7 @@
 }
 
 .sub-container {
-    padding: 5%;
+    padding: 5% 12% 5% 12%;
     margin: auto;
     // @media only screen and (min-width: 1440px) {
     //     font-size: 30px;
@@ -33,7 +34,109 @@
 }
 
 .sub-title {
-    padding-bottom: 5%;
     margin: auto;
     font-weight: 700;
+    font-size: 20px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.li-skill {
+    padding: 3%;
+    color: $primary-text;
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 12% 5% 12%;
+}
+
+.skill-column {
+    text-align: justify;
+    padding-left: 30%;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+    padding: 5% 0 5% 0;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $primary-lines;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    color: $primary-text;
+  }
+  
+  /* Caption text */
+  .text-center {
+    color: $primary-text;
+    font-size: 20px;
+    position: absolute;
+    //bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 3px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: $primary-lines;
+
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: $primary-text;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

@@ -34,6 +34,28 @@ hr.divide {
   margin-right: auto;
 }
 
+/* styling scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EEEEEE;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c7c7c7;
+}
+
 div.nav {
   padding-right: 5%;
 }
@@ -126,7 +148,6 @@ hr.hyp {
   row-gap: 5%;
   -moz-column-gap: 4%;
        column-gap: 4%;
-  padding-bottom: 15%;
 }
 @media only screen and (max-width: 430px) {
   .portfolio-grid {
@@ -141,6 +162,7 @@ hr.hyp {
   display: flex;
   flex-direction: column;
   align-items: left;
+  position: relative;
 }
 
 .project-container-img {
@@ -148,6 +170,37 @@ hr.hyp {
   max-width: 100%;
   height: 200px;
   padding: 20px;
+  opacity: 1;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-container:hover .project-container-img {
+  background-color: #EEEEEE;
+  filter: blur(4px);
+  opacity: 0.5;
+}
+
+.project-container:hover .middle {
+  opacity: 1;
+}
+
+.project-text {
+  font-size: 12px;
+  color: #333333;
+  font-family: "Courier Prime", monospace;
 }
 
 .project-title {
@@ -158,13 +211,13 @@ hr.hyp {
 .bio {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 15% 5% 15% 5%;
+  padding: 10% 12% 10% 12%;
   row-gap: 5%;
 }
 
 .bio-blurb {
   text-align: justify;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .bio-img {
@@ -173,18 +226,133 @@ hr.hyp {
 }
 
 .sub-container {
-  padding: 5%;
+  padding: 5% 12% 5% 12%;
   margin: auto;
 }
 
 .sub-title {
-  padding-bottom: 5%;
   margin: auto;
   font-weight: 700;
+  font-size: 20px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.li-skill {
+  padding: 3%;
+  color: #333333;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5% 12% 5% 12%;
+}
+
+.skill-column {
+  text-align: justify;
+  padding-left: 30%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+  padding: 5% 0 5% 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #9b9b9b;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #333333;
+}
+
+/* Caption text */
+.text-center {
+  color: #333333;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 3px;
+  width: 40px;
+  margin: 0 2px;
+  background-color: #9b9b9b;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #333333;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 footer {
   align-content: center;
+  padding-top: 5%;
 }
 
 .footer-ul {
