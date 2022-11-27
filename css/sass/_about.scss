@@ -2,7 +2,7 @@
 .bio {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 10% 5% 10% 5%;
+    padding: 15% 5% 15% 5%;
     row-gap: 5%;
     // @media only screen and (min-width: 1440px) {
     //     font-size: 30px;
@@ -22,5 +22,18 @@
 .bio-img {
     margin: 0 auto;
     max-width: 40%;
+}
 
+.sub-container {
+    padding: 5%;
+    margin: auto;
+    // @media only screen and (min-width: 1440px) {
+    //     font-size: 30px;
+    // }
+}
+
+.sub-title {
+    padding-bottom: 5%;
+    margin: auto;
+    font-weight: 700;
 }
