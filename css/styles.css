@@ -22,11 +22,6 @@ p {
   font-family: 'Courier Prime', monospace;
 }
 
-img {
-  max-width: 20%;
-  display: block;
-}
-
 hr.divide {
   border: 2px dashed #9b9b9b;
   border-style: none none dashed;
@@ -126,6 +121,8 @@ li a:hover:not(.active) {
 
 .intro-img {
   margin: 0 auto;
+  max-width: 20%;
+  display: block;
 }
 
 hr.hyp {
@@ -184,13 +181,17 @@ hr.hyp {
 .project-container-img {
   background-color: #EEEEEE;
   max-width: 100%;
-  height: 200px;
-  padding: 20px;
+  height: 400px;
+  padding: 5%;
   opacity: 1;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+.project-container-img.half {
+  padding: 5% 0;
 }
 
 .middle {
