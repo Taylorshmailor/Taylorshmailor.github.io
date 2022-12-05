@@ -54,6 +54,7 @@ hr.divide {
 
 div.nav {
   padding-right: 5%;
+  padding-left: 5%;
 }
 
 .nav-ul {
@@ -67,6 +68,10 @@ div.nav {
   float: right;
   border-left: 1.5px dashed #9b9b9b;
   border-bottom: 1.5px dashed #9b9b9b;
+}
+
+.nav-li.nobar {
+  border-left: none;
 }
 
 li:last-child {
@@ -96,27 +101,9 @@ li a:hover:not(.active) {
   padding: 15%;
 }
 
-@media only screen and (min-width: 1440px) {
-  .intro {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (min-width: 430px) {
-  .intro p {
-    font-size: 15px;
-  }
-}
-
 .intro-item {
   padding: 2%;
   text-align: center;
-}
-
-@media only screen and (min-width: 430px) {
-  .intro-item {
-    font-size: 20px;
-  }
 }
 
 .intro-img {
@@ -150,8 +137,8 @@ hr.hyp {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   row-gap: 5%;
-  -webkit-column-gap: 4%;
-          column-gap: 4%;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
 }
 
 @media only screen and (max-width: 430px) {
@@ -165,6 +152,7 @@ hr.hyp {
 .project-container {
   background-color: #FAFAFA;
   width: 100%;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,13 +169,14 @@ hr.hyp {
 .project-container-img {
   background-color: #EEEEEE;
   max-width: 100%;
-  height: 400px;
   padding: 5%;
   opacity: 1;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .project-container-img.half {
@@ -235,7 +224,7 @@ hr.hyp {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  padding: 10% 12% 10% 12%;
+  padding: 10% 10% 10% 10%;
   row-gap: 5%;
 }
 
@@ -246,11 +235,11 @@ hr.hyp {
 
 .bio-img {
   margin: 0 auto;
-  max-width: 40%;
+  max-width: 60%;
 }
 
 .sub-container {
-  padding: 5% 12% 5% 12%;
+  padding: 5% 10% 5% 10%;
   margin: auto;
 }
 
@@ -276,7 +265,7 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding: 5% 12% 5% 12%;
+  padding: 5% 10% 5% 10%;
 }
 
 .skill-column {
@@ -290,6 +279,7 @@ ul {
   position: relative;
   margin: auto;
   padding: 5% 0 5% 0;
+  min-height: 200px;
 }
 
 /* Hide the images by default */
@@ -400,8 +390,7 @@ footer {
 
 .footer-img {
   float: left;
-  padding: 10px 10px 0 0;
-  width: 30px;
+  width: 35px;
   height: auto;
 }
 
