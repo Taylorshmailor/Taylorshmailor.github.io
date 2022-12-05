@@ -28,9 +28,6 @@
 }
 
 .project-container{
-    background-color: $primary-background;
-    width: 100%;
-    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -40,6 +37,7 @@
 .project-container-img {
     background-color: $primary-project;
     max-width: 100%;
+    height: 400px;
     padding: 5%;
     opacity: 1;
     transition: .5s ease;
@@ -70,6 +68,14 @@
     
 }
 
+.project-container:hover .half {
+    background-color: $primary-project;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0.5;
+    
+}
+
 .project-container:hover .middle {
     opacity: 1;
 }
@@ -82,12 +88,11 @@
 }
 
 
-
-
 .project-title {
     padding: 5px;
     text-align: left;
 }
+
   
   
 
