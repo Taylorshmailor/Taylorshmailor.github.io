@@ -376,6 +376,20 @@ footer {
   height: auto;
 }
 
+#btn {
+  border: none;
+  background-color: #FAFAFA;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 5px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: #333333;
+  font-family: "Courier Prime", monospace;
+}
+
 .container {
   padding: 10%;
 }/*# sourceMappingURL=styles.css.map */
