@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./javascript/language.js"></script>
+    <script src="./javascript/nav.js"></script>
 
     <title>Taylor Pham</title>
 </head>
 <body>
     <!-- very cool navbar -->
-    <div class="nav">
-        <ul class="nav-ul">
-            <!-- <li><a class="active" href="#home">Home</a></li> -->
-            <li class="nav-li"><a href="about.html">About</a></li>
-            <li class="nav-li"><a href="index.html">Home</a></li>
-          </ul>
+    <div class="navigation">
+        <div class="nav-container">
+            <!-- might need for about -->
+            <!-- <div class="brand">
+                <a href="#!">🍀 Clover Clothing</a>
+            </div> -->
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+
+                    <!-- Mobile navbar -->
+                    <li class="nav-li nav-hidden"><a href="index.html">Home</a></li>
+                    <li class="nav-li nav-hidden"><a href="about.html">About</a></li>
+                    <li class="nav-li nav-hidden"><a href="contact.html">Contact</a></li>
+
+                    <!-- Main navbar -->
+                    <li class="nav-li"><a href="about.html">About</a></li>
+                    <li class="nav-li"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
+
+
+
+    
 
     <!-- introduction section -->
     <div class="intro">

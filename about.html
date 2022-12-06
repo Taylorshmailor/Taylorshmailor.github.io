@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./javascript/slideshow.js" defer></script>
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="./javascript/nav.js"></script>
     <title>Taylor Pham</title>
 </head>
 <body>
-    <div class="nav">
-        <ul class="nav-ul">
-            <!-- <li><a class="active" href="#home">Home</a></li> -->
-            <li class="nav-li"><a href="about.html">About</a></li>
-            <li class="nav-li nobar"><a href="index.html">Home</a></li>
-            <h1>TAYLOR PHAM</h1>
-        </ul>
+    <div class="navigation">
+        <div class="nav-container">
+            <!-- might need for about -->
+            <!-- <div class="brand">
+                <a href="#!">🍀 Clover Clothing</a>
+            </div> -->
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+
+                    <!-- Mobile navbar -->
+                    <li class="nav-li nav-hidden"><a href="index.html">Home</a></li>
+                    <li class="nav-li nav-hidden"><a href="about.html">About</a></li>
+                    <li class="nav-li nav-hidden"><a href="contact.html">Contact</a></li>
+
+                    <!-- Main navbar -->
+                    <li class="nav-li"><a href="about.html">About</a></li>
+                    <li class="nav-li"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <div class="bio">

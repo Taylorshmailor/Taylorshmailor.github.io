@@ -1,20 +1,8 @@
 // navbar classes
+$content-width: 1000px;
+$breakpoint: 431px;
+$nav-height: 70px;
 
-div.nav {
-    padding-right: 5%;
-    padding-left: 5%;
-    // @media only screen and (max-width: 430px) {
-    //     display: none;
-    // }
-}
-
-.nav-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-  
 .nav-li {
     float: right;
     border-left: 1.5px dashed $primary-lines;
@@ -29,17 +17,7 @@ li:last-child {
     border-left: none;
 }
   
-li a {
-    display: block;
-    color: $primary-text;
-    text-align: center;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-family: 'Courier Prime', monospace;
-    // @media only screen and (min-width: 1440px) {
-    //     font-size: 30px;
-    // }
-}
+
   
 li a:hover:not(.active) {
     color: $secondary-hover;
@@ -47,5 +25,178 @@ li a:hover:not(.active) {
 
   
 .active {
-    background-color: $primary-hover;
+    background-color: $primary-background;
+}
+
+.nav-hidden {
+    display: none;;
+}
+
+.nav-container {
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+
+  a, a:visited {
+    color: $primary-text;
+    text-decoration: none;
+  }
+}
+
+nav {
+  float: right;
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li a {
+        display: block;
+        color: $primary-text;
+        text-align: center;
+        padding: 10px 50px;
+        text-decoration: none;
+        font-family: 'Courier Prime', monospace;
+        
+        
+         &::before {
+           transition: 300ms;
+           height: 5px;
+           content: "";
+           position: absolute;
+           background-color: $primary-lines;
+           width: 0%;
+           bottom: 0px;
+        }
+
+        &:hover::before{
+          width: 70%;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $primary-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  
+    .nav-li {
+        display: none;
+    
+        &.nobar {
+            border-left: none;
+        }
+    }
+
+    .nav-hidden {
+        float: none;
+        border-left: none;
+        border-bottom: none;
+        display: block;
+        font-size: 30px;
+        padding-bottom: 5%;
+        float: right;
+        clear: both;
+    }
+  
+  
+    .nav-mobile {
+    display: block;
+    }
+    nav {
+        width: 100%;
+        padding: $nav-height 0 15px;
+        ul {
+            background-color: $primary-background;
+            height: 100vh;
+            display: none;
+            padding-top: 80%;
+            //position: absolute;
+        }
+    }
+    .nav-dropdown {
+        position: static;
+        
+    }
+    }
+
+    #nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+    span,
+    span:before,
+    span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: $primary-lines;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 300ms ease-in-out;
+    }
+    span:before {
+        top: -10px;
+    }
+    span:after {
+        bottom: -10px;
+    }
+    &.active span {
+        background-color: transparent;
+        &:before,
+        &:after {
+        top: 0;
+        }
+        &:before {
+        transform: rotate(45deg);
+        }
+        &:after {
+        transform: rotate(-45deg);
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
 }
