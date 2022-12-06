@@ -42,7 +42,6 @@ li a:hover:not(.active) {
   position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: $nav-height;
   text-transform: uppercase;
   font-size: 1.4em;
 
@@ -121,6 +120,10 @@ nav {
         &.nobar {
             border-left: none;
         }
+    }
+
+    h1 {
+        font-size: 20px;
     }
 
     .nav-hidden {
