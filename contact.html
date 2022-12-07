@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./javascript/language.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="./javascript/nav.js"></script>
     <title>Taylor Pham</title>
 </head>
 <body>
@@ -29,21 +32,43 @@
     </div>
 
     <div class="contact-container">
-        <h1 class="contact-title">Contact</h1>
-        <p class="contact-info">Phone: (832)812-5589</p>
-        <p class="contact-info">Email: taylortphm@gmail.com</p>
+        <p class="contact-title">Contact</p>
+        <div class="bio">
+            <p class="contact-blurb">
+                Thanks for reading through!
+                <br>
+                <br>
+                If you'd like to get in touch then feel free to shoot me a message or 
+                even checkout my socials below ٩( ᐛ )و
+                <br>
+                <br>
+                <p class="contact-info">Phone: (832)812-5589</p>
+                <p class="contact-info">Email: taylortphm@gmail.com</p>
+                <img class="contact-profile" src="/images/profile.jpeg" alt="profile">
+                <p class="end-note">Thanks and gig'em!</p>
+            </p>
 
-        <div class="contact-buttons">
-            <a href="https://github.com/Taylorshmailor" target="_blank"><img class="contact-img" src="/images/git.png" alt="github"></a>
-            <a href="./images/Taylor Pham Resume.pdf" target="_blank"><img class="contact-img" src="/images/resume.png" alt="resume"></a>
-            <a href="https://www.linkedin.com/in/taylor-pham/" target="_blank"><img class="contact-img" src="/images/linkedin.png" alt="linkedin"></a>
+            <div class="contact-buttons">
+                <a href="https://github.com/Taylorshmailor" target="_blank"><img class="contact-img" src="/images/git.png" alt="github"></a>
+                <a href="./images/Taylor Pham Resume.pdf" target="_blank"><img class="contact-img" src="/images/resume.png" alt="resume"></a>
+                <a href="https://www.linkedin.com/in/taylor-pham/" target="_blank"><img class="contact-img" src="/images/linkedin.png" alt="linkedin"></a>
+            </div>
+
+            <div class="contact-lang" id='google_translate_element'></div>
         </div>
+        
     </div>
 
-    <!-- footer to hold scripts -->
     <footer>
-        <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
-        <script src="./javascript/nav.js"></script>
+        <div class="credits">
+            <h1 class="contact-title">Special Thanks to ╰(´ ︶ `)╯♡</h1>
+            <ul>
+                <li class="contact-blurb">Professor Wade</li>
+                <li class="contact-blurb">https://www.w3schools.com/</li>
+                <li class="contact-blurb">https://stackoverflow.com/</li>
+            </ul>
+        </div>
     </footer>
+
 </body>
 </html>
