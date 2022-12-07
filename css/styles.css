@@ -393,10 +393,11 @@ hr.hyp {
 .bio {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  padding: 10%;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
   row-gap: 5%;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
 }
 
 .bio-blurb {
@@ -406,7 +407,7 @@ hr.hyp {
 
 .bio-img {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 90%;
 }
 
 .sub-container {
@@ -537,6 +538,12 @@ ul {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .bio {
+    display: block;
   }
 }
 
