@@ -6,6 +6,7 @@
 }
 
 body {
+  top: 0 !important;
   background-color: #FAFAFA;
   font-family: "Courier New", Courier, monospace;
 }
@@ -596,6 +597,12 @@ footer {
   border-left: 1.5px dashed #9b9b9b;
 }
 
+.footer-li-lang {
+  float: right;
+  padding: 0.35% 0 0 3%;
+  border-left: 1.5px dashed #9b9b9b;
+}
+
 .footer-img {
   float: left;
   width: 35px;
@@ -612,6 +619,36 @@ footer {
   cursor: pointer;
   color: #333333;
   font-family: "Courier Prime", monospace;
+}
+
+#google_translate_element select {
+  background: transparent;
+  color: #333333;
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+}
+
+/*google translate link | logo */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+/* google translate banner-frame */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .container {

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./javascript/slideshow.js" defer></script>
     <script src="./javascript/language.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <title>Taylor Pham</title>
 </head>
 <body>
@@ -129,29 +130,25 @@
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
+    </div>
+    <br>
   
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-
-
-
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <!-- very cool footer -->
     <footer>
         <ul class="footer-ul">
             <!-- <li><a class="active" href="#home">Home</a></li> -->
-            <li class="footer-li">
-                <button id="btn" onclick="change_text()">en</button>
+            <li class="footer-li-lang">
+                <div id='google_translate_element'></div>
             </li>
-            <li class="footer-li"><a>(832)812-5589</a></li>
-            <li class="footer-li"><a>taylortphm@gmail.com</a></li>
+            <li class="footer-li">(832)812-5589</li>
+            <li class="footer-li">taylortphm@gmail.com</li>
 
             <a href="https://github.com/Taylorshmailor" target="_blank"><img class="footer-img" src="/images/git.png" alt="github"></a>
             <a href="./images/Taylor Pham Resume.pdf" target="_blank"><img class="footer-img" src="/images/resume.png" alt="resume"></a>

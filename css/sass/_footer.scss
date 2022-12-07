@@ -24,6 +24,12 @@ footer {
     border-left: 1.5px dashed $primary-lines;
 }
 
+.footer-li-lang {
+    float: right;
+    padding:  .35% 0 0 3%;
+    border-left: 1.5px dashed $primary-lines;
+}
+
 .footer-img {
     float: left;
     width: 35px;
@@ -41,6 +47,30 @@ footer {
     color: $primary-text;
     font-family: 'Courier Prime', monospace;
 }
+
+#google_translate_element select{
+    background:transparent;
+    color: $primary-text;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+    
+/*google translate link | logo */
+.goog-logo-link{
+    display:none!important;
+}
+.goog-te-gadget{
+    color:transparent!important;
+}
+    
+/* google translate banner-frame */
+
+.goog-te-banner-frame{
+    display:none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+.goog-text-highlight { background: none !important; box-shadow: none !important;}
 
 
   
