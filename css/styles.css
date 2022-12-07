@@ -163,7 +163,7 @@ nav ul ul li a {
     background-color: #FAFAFA;
     height: 100vh;
     display: none;
-    padding-top: 80%;
+    padding-top: 100%;
   }
   .nav-dropdown {
     position: static;
@@ -321,6 +321,51 @@ hr.hyp {
 .project-title {
   padding: 5px;
   text-align: left;
+}
+
+/* CSS */
+.project-btn {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #333333;
+  box-sizing: border-box;
+  color: #333333;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #333333;
+  font-family: "Courier Prime", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  height: 30px;
+  justify-content: center;
+  min-width: 100px;
+  outline: 0;
+  padding: 0 1px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 2%;
+}
+
+.project-btn:focus {
+  color: #333333;
+}
+
+.project-btn:hover {
+  border-color: #508BFC;
+  color: #508BFC;
+  fill: #508BFC;
+}
+
+.project-btn:active {
+  border-color: #508BFC;
+  color: #508BFC;
+  fill: #508BFC;
 }
 
 @media only screen and (max-width: 431px) {

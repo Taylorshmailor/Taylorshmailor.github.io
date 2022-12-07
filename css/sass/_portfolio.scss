@@ -93,6 +93,50 @@
     text-align: left;
 }
 
+
+/* CSS */
+.project-btn {
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid $primary-text;
+    box-sizing: border-box;
+    color: $primary-text;
+    cursor: pointer;
+    display: inline-flex;
+    fill: $primary-text;
+    font-family: 'Courier Prime', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    min-width: 100px;
+    outline: 0;
+    padding: 0 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 2%;
+}
+
+.project-btn:focus {
+  color: $primary-text;
+}
+
+.project-btn:hover {
+  border-color: $project-hover;
+  color: $project-hover;
+  fill: $project-hover;
+}
+
+.project-btn:active {
+  border-color: $project-hover;
+  color: $project-hover;
+  fill: $project-hover;
+}
+
   
   
 @media only screen and (max-width: $breakpoint) {
