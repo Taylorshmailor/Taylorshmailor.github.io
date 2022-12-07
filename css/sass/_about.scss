@@ -4,33 +4,32 @@
     grid-template-columns: 3fr 1fr;
     row-gap: 5%;
     column-gap: 5%;
+}
 
-    // @media only screen and (min-width: 1440px) {
-    //     font-size: 30px;
-    // }
+.bio-title {
+  margin: auto;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 2%;
+}
 
-    // @media only screen and (min-width: 430px) {
-    //     grid-template-columns: auto;
-    //     row-gap: 5%;
-    // }
+.bio-hidden {
+  display: none;
 }
 
 .bio-blurb {
     text-align: justify;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .bio-img {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .sub-container {
     padding: 5% 10% 5% 10%;
     margin: auto;
-    // @media only screen and (min-width: 1440px) {
-    //     font-size: 30px;
-    // }
 }
 
 .sub-title {
@@ -66,69 +65,70 @@ ul {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 75%;
-    position: relative;
-    margin: auto;
-    padding: 5% 0 5% 0;
-    min-height: 400px;
-  }
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+  padding: 5% 0 5% 0;
+  min-height: 450px;
+}
   
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
   
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: $primary-lines;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: $primary-lines;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    color: $primary-text;
-  }
-  
-  /* Caption text */
-  .text-center {
-    color: $primary-text;
-    font-size: 20px;
-    position: absolute;
-    //bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 3px;
-    width: 40px;
-    margin: 0 2px;
-    background-color: $primary-lines;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: $primary-text;
+}
+
+/* Caption text */
+.text-center {
+  color: $primary-text;
+  font-size: 24px;
+  position: absolute;
+  //bottom: 8px;
+  width: 100%;
+  text-align: justify;
+  padding: 0 10% 0 10%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 3px;
+  width: 40px;
+  margin: 0 2px;
+  background-color: $primary-lines;
+
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
   
 .active, .dot:hover {
-  background-color: $primary-background;
+  background-color: $primary-text;
 }
 
 /* Fading animation */
@@ -142,8 +142,54 @@ ul {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 431px) {
+
+@media only screen and (max-width: $breakpoint) {
+  
   .bio {
     display: block;
+  }
+
+  .bio-blurb {
+    font-size: smaller;
+    padding-bottom: 10%;
+  }
+
+  .bio-hidden {
+    display: block;
+    font-size: smaller;
+    padding-bottom: 3%;
+  }
+
+  .bio-img {
+    max-width: 75%;
+    border-radius: 1%;
+}
+
+  .li-skill {
+    font-size: smaller;
+  }
+
+  .sub-title {
+      font-size: smaller;
+  }
+
+  .skill-column {
+      text-align: left;
+      padding-left: 15%;
+  }
+
+  .skill-container {
+      padding: 5%;
+  }
+
+  .text-center {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .slideshow-container {
+    max-width: 90%;
+    padding: 5% 0 5% 0;
+    min-height: 250px;
   }
 }

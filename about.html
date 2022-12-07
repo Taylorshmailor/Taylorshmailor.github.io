@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./javascript/slideshow.js" defer></script>
+    <script src="./javascript/language.js"></script>
     <title>Taylor Pham</title>
 </head>
 <body>
     <div class="navigation">
         <div class="nav-container">
-            <div class="brand">
-                <h1>TAYLOR PHAM</h1>
-            </div>
+           
             <nav>
                 <div class="nav-mobile">
+                    
                     <a id="nav-toggle" href="#!"><span></span></a>
                 </div>
                 <ul class="nav-list">
-
                     <!-- Mobile navbar -->
                     <li class="nav-li nav-hidden"><a href="index.html">Home</a></li>
                     <li class="nav-li nav-hidden"><a href="about.html">About</a></li>
@@ -34,9 +33,8 @@
 
 
 
-
-
     <div class="intro">
+        <p class="bio-title bio-hidden">About</p>
         <div class="bio">
             <p class="bio-blurb">
                 I'm a computer science major with an interest in design. <br>
@@ -86,11 +84,28 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
         <p class="text-center">
-            "Taylor was my intern for the summer of 2020. Although she is not an electrical engineer, <br> 
-            she was put on our team to create software that would speed up data mining and analytics <br> 
+            "Taylor was the first intern I've ever mentored.
+            <br>
+            <br>
+            Her project was to create an authentication system, both front and back end, for
+            an internal website at IBM. Thanks to Taylor's successful work, we are now able to securely
+            log our workers and retailers that we work with without jeaperdizing sensitive information. 
+            <br>
+            <br>
+            Taylor is a fast learner, and made being a mentor enjoyable the entire time. I hope I get the chance to work with her again in the future."
+            <br>
+            <br>
+            - Chris Webber, Fullstack Engineer at IBM
+        </p>
+    </div>
+  
+    <div class="mySlides fade">
+        <p class="text-center">
+            "Taylor was my intern for the summer of 2020. Although she is not an electrical engineer, 
+            she was put on our team to create software that would speed up data mining and analytics 
             for our motherboard database. <br>
             <br>
-            Our time working together was short, but I could tell she was a hardworker and efficient at coding.<br>
+            Our time working together was short, but I could tell she was a hardworker and efficient at coding.
             I only wish the best for her and her career."
             <br>
             <br>
@@ -100,38 +115,15 @@
   
     <div class="mySlides fade">
         <p class="text-center">
-            "Taylor was the first intern I've ever mentored. This whole recommendation is gonna be a  
-            <br>
-            tad long as she set the bar pretty high for future interns.
+            "Taylor joined my lab in 2020 May and was the lead for the facial recognition team in my Human Factors and Cognitive Systems research lab.
             <br>
             <br>
-            Taylor's project was to create an authentication system, both front-end and back-end, for 
-            <br>
-            an internal website at IBM. Thanks to Taylor's successful work, we are able to securely <br>
-            log our workers and retailers that we work with without jeaperdizing sensitive information <br>
-            for each respective retailer. 
+            In the time that she worked under me, she programmed an android application using OpenFace, an open source facial recognition software, to aid in our pilot 
+            studies data collection and micro-expresssion research. This app was critical for our research lab and I can't thank her enough for developing this for our team."
             <br>
             <br>
-    
-            Taylor is a fast learner, and hardworking when it comes to getting tasks done with upmost <br>
-            quality. I hope I get the chance to work with her again in the future."
-    
-            <br>
-            <br>
-            - Chris Webber, Fullstack Engineer at IBM
+            - Saya Susindar, Human Factors and Cognitive Systems Graduate Researcher
         </p>
-    </div>
-  
-    <div class="mySlides fade">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="text-center">"Taylor is the best software engineer I know!"</p>
-        <br>
-        <br>
-        <p class="text-center">- My mom</p>
     </div>
   
     <!-- Next and previous buttons -->
@@ -155,7 +147,9 @@
     <footer>
         <ul class="footer-ul">
             <!-- <li><a class="active" href="#home">Home</a></li> -->
-            <li class="footer-li"><a>en</a></li>
+            <li class="footer-li">
+                <button id="btn" onclick="change_text()">en</button>
+            </li>
             <li class="footer-li"><a>(832)812-5589</a></li>
             <li class="footer-li"><a>taylortphm@gmail.com</a></li>
 

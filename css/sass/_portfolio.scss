@@ -95,7 +95,15 @@
 
   
   
+@media only screen and (max-width: $breakpoint) {
+    .project-container-img {
+        height: 200px;
+    }
 
+    .portfolio {
+        padding-bottom: 20%;
+    }
+}
   
   
 

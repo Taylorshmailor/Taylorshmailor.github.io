@@ -2,6 +2,10 @@
 footer {
     align-content: center;
     padding-top: 5%;
+
+    @media only screen and (max-width: $breakpoint) {
+        display: none;
+    }
 }
 
 
@@ -16,6 +20,7 @@ footer {
   
 .footer-li {
     float: right;
+    padding:  0.5% 3% 0 3%;
     border-left: 1.5px dashed $primary-lines;
 }
 
@@ -32,11 +37,11 @@ footer {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    padding: 5px 5px;
-    margin: 4px 2px;
     cursor: pointer;
     color: $primary-text;
     font-family: 'Courier Prime', monospace;
 }
+
+
   
 

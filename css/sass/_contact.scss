@@ -1,0 +1,26 @@
+
+.contact-container {
+    grid-template-columns: auto auto auto;
+    padding: 10%;
+}
+
+.contact-buttons {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-img {
+    width: 50px;
+    height: auto;
+}
+
+.contact-title {
+    font-size: 24px;
+}
+
+.contact-info {
+    font-size: 20px;
+    padding: 5% 0;
+
+}
