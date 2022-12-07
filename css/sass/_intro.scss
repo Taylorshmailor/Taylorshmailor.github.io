@@ -7,6 +7,11 @@
 .intro-item {
     padding: 2%;
     text-align: center;
+    font-size: x-large;
+
+    @media only screen and (max-width: $breakpoint) {
+        font-size: smaller;
+    }
 }
 
 .intro-img {
