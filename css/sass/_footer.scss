@@ -53,6 +53,7 @@ footer {
     color: $primary-text;
     font-family: 'Courier New', Courier, monospace;
     border: none;
+    font-weight: 500;
 }
     
 /*google translate link | logo */
@@ -73,5 +74,9 @@ footer {
 .goog-text-highlight { background: none !important; box-shadow: none !important;}
 
 
-  
-
+@media only screen and (max-width: $breakpoint) {
+    #google_translate_element select{
+        border: 1px solid $primary-text;
+        font-weight: 700;
+    }
+}  

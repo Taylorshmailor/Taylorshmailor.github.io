@@ -8,6 +8,19 @@
         border-left: none;
     }
 }
+
+.nav-li2 {
+  float: right;
+  border-left: 1.5px dashed $primary-lines;
+  border-bottom: 1.5px dashed $primary-lines;
+
+  display: block;
+  color: $primary-text;
+  text-align: center;
+  padding: 10px 50px;
+  font-weight: 700;
+  font-size: 15.9px;
+}
   
 li:last-child {
     border-left: none;
@@ -84,6 +97,10 @@ nav {
       &.nobar {
           border-left: none;
       }
+  }
+
+  .nav-li2 {
+    display: none;
   }
 
   h1 {
