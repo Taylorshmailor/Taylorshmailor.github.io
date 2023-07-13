@@ -4,10 +4,6 @@ import SplineLoader from '@splinetool/loader';
 import gsap from "gsap";
 import "./css/styles.css"
 
-// import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-// import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
-
-
 // Scene
 const scene = new THREE.Scene();
 
@@ -36,7 +32,6 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 scene.background = new THREE.Color('#FFFFFF');
 renderer.setClearColor('#FFFFFF', 1);
-// #fffef4 - pastel yellow background instead
 
 // spline scene
 const loader = new SplineLoader();
@@ -60,7 +55,6 @@ loader.load(
     console.log('An error happened', error);
   }
 );
-
 
 // orbit controls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -116,15 +110,6 @@ function animate() {
   renderer.render(scene, camera);
 }
 
-
-
-
-
-
-
-
-
-
 // camera
 const camera2 = new THREE.OrthographicCamera(window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2,  -100000, 100000);
 camera2.position.set(0,0,0);
@@ -166,60 +151,10 @@ controls2.enablePan = false;
 controls2.enableZoom = false;
 controls2.enableRotate = false;
 
-// window.addEventListener('resize', onWindowResize);
-// function onWindowResize() {
-//   camera2.left = window.innerWidth / - 2;
-//   camera2.right = window.innerWidth / 2;
-//   camera2.top = window.innerHeight / 2;
-//   camera2.bottom = window.innerHeight / - 2;
-//   camera2.updateProjectionMatrix();
-//   renderer2.setSize(window.innerWidth, window.innerHeight);
-// }
-
 function animate2(time) {
   controls2.update();
   renderer2.render(scene2, camera2);
-
-  // if (splineScene) {
-  //   const aspectRatio = window.innerWidth / window.innerHeight;
-
-  //   //Set the desired offsets for left and down
-  //   const offsetX = 0.55; // Adjust the offset value as needed
-  //   const offsetY = 0.70; // Adjust the offset value as needed
-
-  //   // Calculate the position based on aspect ratio and offsets
-  //   const shiftX = offsetX * window.innerWidth * aspectRatio;
-  //   const shiftY = offsetY * window.innerHeight;
-
-  //   splineScene.position.x = shiftX - window.innerWidth / 2;
-  //   splineScene.position.y = shiftY - window.innerHeight / 2;
-
-  //   // Rotate the splineScene around its own center
-  //   splineScene.rotation.y += rotationSpeed * rotationDirection;
-
-  //   // Reverse the rotation direction when exceeding a threshold
-  //   const rotationThreshold = Math.PI / 4; // Adjust the rotation threshold as needed
-  //   if (splineScene.rotation.y >= rotationThreshold || splineScene.rotation.y <= -rotationThreshold) {
-  //     rotationDirection *= -1;
-  //   }
-  //   renderer2.render(scene2, camera2);
-  // }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Sizes
 const sizes = {
