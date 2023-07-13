@@ -103,9 +103,6 @@ function animate() {
     splineScene.position.x = shiftX - window.innerWidth / 2;
     splineScene.position.y = shiftY - window.innerHeight / 2;
 
-    // splineScene.position.x = (window.innerWidth / 2);
-    // splineScene.position.y = (window.innerHeight / 2);
-
     // Rotate the splineScene around its own center
     splineScene.rotation.y += rotationSpeed * rotationDirection;
 
@@ -118,6 +115,111 @@ function animate() {
 
   renderer.render(scene, camera);
 }
+
+
+
+
+
+
+
+
+
+
+// camera
+const camera2 = new THREE.OrthographicCamera(window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2,  -100000, 100000);
+camera2.position.set(0,0,0);
+camera2.quaternion.setFromEuler(new THREE.Euler(-0.15, 0.15, 0.02));
+
+// scene
+const scene2 = new THREE.Scene();
+
+//let splineScene2;
+
+// spline scene
+const loader2 = new SplineLoader();
+loader2.load(
+  'https://prod.spline.design/ejquq6cwQH395nML/scene.splinecode',
+  (splineScene2) => {
+    scene2.add(splineScene2);
+  }
+);
+
+// renderer
+const canvas2 = document.querySelector('.webgl2');
+const renderer2 = new THREE.WebGLRenderer({ antialias: true, canvas: canvas2 });
+renderer2.setSize(window.innerWidth, window.innerHeight);
+renderer2.setAnimationLoop(animate2);
+document.body.appendChild(renderer2.domElement);
+
+// scene settings
+renderer2.shadowMap.enabled = true;
+renderer2.shadowMap.type = THREE.PCFShadowMap;
+
+scene2.background = new THREE.Color('#FFFFFFF');
+renderer2.setClearAlpha(1);
+
+// orbit controls
+const controls2 = new OrbitControls(camera2, renderer2.domElement);
+controls2.enableDamping = true;
+controls2.dampingFactor = 0.125;
+controls2.enablePan = false;
+controls2.enableZoom = false;
+controls2.enableRotate = false;
+
+// window.addEventListener('resize', onWindowResize);
+// function onWindowResize() {
+//   camera2.left = window.innerWidth / - 2;
+//   camera2.right = window.innerWidth / 2;
+//   camera2.top = window.innerHeight / 2;
+//   camera2.bottom = window.innerHeight / - 2;
+//   camera2.updateProjectionMatrix();
+//   renderer2.setSize(window.innerWidth, window.innerHeight);
+// }
+
+function animate2(time) {
+  controls2.update();
+  renderer2.render(scene2, camera2);
+
+  // if (splineScene) {
+  //   const aspectRatio = window.innerWidth / window.innerHeight;
+
+  //   //Set the desired offsets for left and down
+  //   const offsetX = 0.55; // Adjust the offset value as needed
+  //   const offsetY = 0.70; // Adjust the offset value as needed
+
+  //   // Calculate the position based on aspect ratio and offsets
+  //   const shiftX = offsetX * window.innerWidth * aspectRatio;
+  //   const shiftY = offsetY * window.innerHeight;
+
+  //   splineScene.position.x = shiftX - window.innerWidth / 2;
+  //   splineScene.position.y = shiftY - window.innerHeight / 2;
+
+  //   // Rotate the splineScene around its own center
+  //   splineScene.rotation.y += rotationSpeed * rotationDirection;
+
+  //   // Reverse the rotation direction when exceeding a threshold
+  //   const rotationThreshold = Math.PI / 4; // Adjust the rotation threshold as needed
+  //   if (splineScene.rotation.y >= rotationThreshold || splineScene.rotation.y <= -rotationThreshold) {
+  //     rotationDirection *= -1;
+  //   }
+  //   renderer2.render(scene2, camera2);
+  // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Sizes
 const sizes = {
@@ -138,108 +240,6 @@ window.addEventListener("resize", () => {
   renderer.setSize(sizes.width, sizes.height);
 })
 
-
-
-// Scene
-const scene2 = new THREE.Scene();
-
-// Defining a variable for our model 
-//var myObj;
-
-
-// spline scene
-const loader2 = new SplineLoader();
-
-let splineScene2;
-
-loader2.load(
-  'https://prod.spline.design/ejquq6cwQH395nML/scene.splinecode',
-  (loadedSplineScene2) => {
-    splineScene2 = loadedSplineScene2;
-    scene2.add(splineScene2);
-
-    // Adjust position and rotation
-    const box2 = new THREE.Box3().setFromObject(splineScene2);
-    const center2 = box2.getCenter(new THREE.Vector3());
-    splineScene2.position.copy(center2).multiplyScalar(-1);
-
-  },
-  null,
-  (error) => {
-    console.log('An error happened', error);
-  }
-);
-
-//create material for obj
-// var mtlLoader = new MTLLoader();
-// mtlLoader.load('./vectary/Avatar.mtl',function (materials) {
-//   materials.preload();
-
-//   // Load the object
-//   var objLoader = new OBJLoader();
-//   objLoader.setMaterials(materials);
-//   objLoader.load('./vectary/Avatar.obj', function (object) {
-//     scene2.add(object);
-//     myObj = object;
-//     myObj.position.x = 350;
-//     myObj.position.y = -100;
-//   });
-// });
-
-// // Create our sphere
-// const geometry = new THREE.SphereGeometry(1, 64, 64)
-// const material = new THREE.MeshStandardMaterial({
-//   color: '#FFFEF4',
-//   roughness: 0.5,
-
-// })
-// const mesh = new THREE.Mesh(geometry, material)
-// mesh.receiveShadow = true;
-// scene2.add(mesh)
-
-// Sizes
-const sizes2 = {
-  width: window.innerWidth,
-  height: window.innerHeight
-}
-
-console.log(sizes2.width);
-console.log(sizes2.height);
-
-// Camera
-const camera2 = new THREE.PerspectiveCamera(45, sizes2.width / sizes2.height)
-camera2.position.z = 950
-camera2.position.x = 300
-camera2.position.y = 50
-
-
-scene2.add(camera2)
-
-// Render scene onto 
-const canvas2 = document.querySelector('.webgl2')
-//const renderer = new THREE.WebGLRenderer({canvas})
-const renderer2 = new THREE.WebGLRenderer({canvas2})
-renderer2.setSize(sizes2.width, sizes2.height)
-renderer2.setPixelRatio(2)
-renderer2.setClearColor("#FFFFFF")
-renderer2.render(scene2, camera2)
-
-// Controls
-const controls2 = new OrbitControls(camera2, canvas2)
-controls2.enableDamping = true
-controls2.enablePan = false
-controls2.enableZoom = false
-
-// Resize
-window.addEventListener("resize", () => {
-  // Update sizes
-  sizes2.width = window.innerWidth;
-  sizes2.height = window.innerHeight;
-  // Update Camera
-  camera2.updateProjectionMatrix()
-  camera2.aspect = sizes2.width / sizes2.height;
-  renderer2.setSize(sizes2.width, sizes2.height);
-})
 
 const loop = () => {
   controls.update()
