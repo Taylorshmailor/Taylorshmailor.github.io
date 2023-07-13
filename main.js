@@ -4,8 +4,8 @@ import SplineLoader from '@splinetool/loader';
 import gsap from "gsap";
 import "./css/styles.css"
 
-import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+// import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+// import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
 
 
 // Scene
@@ -138,38 +138,64 @@ window.addEventListener("resize", () => {
   renderer.setSize(sizes.width, sizes.height);
 })
 
+
+
 // Scene
 const scene2 = new THREE.Scene();
 
 // Defining a variable for our model 
-var myObj;
+//var myObj;
+
+
+// spline scene
+const loader2 = new SplineLoader();
+
+let splineScene2;
+
+loader2.load(
+  'https://prod.spline.design/ejquq6cwQH395nML/scene.splinecode',
+  (loadedSplineScene2) => {
+    splineScene2 = loadedSplineScene2;
+    scene2.add(splineScene2);
+
+    // Adjust position and rotation
+    const box2 = new THREE.Box3().setFromObject(splineScene2);
+    const center2 = box2.getCenter(new THREE.Vector3());
+    splineScene2.position.copy(center2).multiplyScalar(-1);
+
+  },
+  null,
+  (error) => {
+    console.log('An error happened', error);
+  }
+);
 
 //create material for obj
-var mtlLoader = new MTLLoader();
-mtlLoader.load('./vectary/Avatar.mtl',function (materials) {
-  materials.preload();
+// var mtlLoader = new MTLLoader();
+// mtlLoader.load('./vectary/Avatar.mtl',function (materials) {
+//   materials.preload();
 
-  // Load the object
-  var objLoader = new OBJLoader();
-  objLoader.setMaterials(materials);
-  objLoader.load('./vectary/Avatar.obj', function (object) {
-    scene2.add(object);
-    myObj = object;
-    myObj.position.x = 350;
-    myObj.position.y = -100;
-  });
-});
+//   // Load the object
+//   var objLoader = new OBJLoader();
+//   objLoader.setMaterials(materials);
+//   objLoader.load('./vectary/Avatar.obj', function (object) {
+//     scene2.add(object);
+//     myObj = object;
+//     myObj.position.x = 350;
+//     myObj.position.y = -100;
+//   });
+// });
 
 // // Create our sphere
-const geometry = new THREE.SphereGeometry(1, 64, 64)
-const material = new THREE.MeshStandardMaterial({
-  color: '#FFFEF4',
-  roughness: 0.5,
+// const geometry = new THREE.SphereGeometry(1, 64, 64)
+// const material = new THREE.MeshStandardMaterial({
+//   color: '#FFFEF4',
+//   roughness: 0.5,
 
-})
-const mesh = new THREE.Mesh(geometry, material)
-mesh.receiveShadow = true;
-scene2.add(mesh)
+// })
+// const mesh = new THREE.Mesh(geometry, material)
+// mesh.receiveShadow = true;
+// scene2.add(mesh)
 
 // Sizes
 const sizes2 = {
