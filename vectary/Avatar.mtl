@@ -1,0 +1,100 @@
+newmtl Breath of Spring_7a2e371f-0eac-4612-8234-94b0d663c851
+Kd 0.929 0.929 0.929
+d 1.000
+newmtl Lollipop Soda_9855106b-7e8e-432d-94fa-ab8275443aba
+Kd 0.400 0.373 0.357
+d 1.000
+newmtl California Dream_0cc000a9-40e7-46e3-9dc0-9b57a8e78a66
+Kd 1.000 0.651 0.251
+d 1.000
+newmtl Hudson 1_e4976c20-622e-4edf-871c-1dbfa5ce3217
+Kd 1.000 1.000 1.000
+d 1.000
+newmtl Aquarius 1_da1cedf2-2a0b-45cb-b467-92b2b39472f0
+Kd 0.937 0.937 0.937
+d 1.000
+newmtl Aquarius_13cbf3b4-ed63-4c97-982b-3b1656adfbac
+Kd 0.937 0.937 0.937
+d 1.000
+newmtl Morning Rush 3_ce55ae4e-7a12-4234-bc3d-3c609052a9b6
+Kd 0.388 0.357 0.345
+d 1.000
+newmtl Everest_5d9bad19-f7a9-481d-ab8f-242da025503f
+Kd 0.988 0.922 0.890
+d 1.000
+newmtl Morning Rush 2_4368930c-689f-4f1c-a6df-657691f6c343
+Kd 0.388 0.357 0.345
+d 1.000
+newmtl Morning Rush 1_38c7fb5f-c87f-4fff-8cc7-1026b1128b1c
+Kd 0.380 0.345 0.329
+d 1.000
+newmtl Morning Rush 4_ec1ecd64-6c79-4873-8034-4385c15c07da
+Kd 0.380 0.349 0.329
+d 1.000
+newmtl Morning Rush_c8905835-41bb-4820-abc0-669571a1ef20
+Kd 0.380 0.349 0.329
+d 1.000
+newmtl Amazonian 3_6268d0ff-c8c3-46b7-9ae8-b29f7248da16
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd colorTexture&opacityTexture.png
+newmtl Amazonian 2_a241e693-a507-45f4-839f-e343746b871d
+Kd 0.400 0.373 0.357
+d 1.000
+newmtl Amazonian 1_5957b589-2113-4ff4-84af-ec7081e2d7ba
+Kd 0.380 0.349 0.329
+d 1.000
+newmtl Amazonian_c1f11a0a-5dee-4b62-8f6f-203fbb9ca6e7
+Kd 0.349 0.322 0.306
+d 1.000
+newmtl Clear Day_72251a3e-6efd-4bb7-b989-bee13b27c803
+Kd 0.400 0.373 0.357
+d 1.000
+newmtl Disco LIghts 1_db8e18f1-adee-43a3-86f6-80f04e68e018
+Kd 0.329 0.263 0.220
+d 1.000
+newmtl Disco LIghts_ea2a9b96-c556-4540-b509-93a1591acdb8
+Kd 0.290 0.188 0.059
+d 1.000
+newmtl Falling Star 1_2df35110-6690-4c45-8862-cbeed82ce0a5
+Kd 0.388 0.247 0.000
+d 1.000
+newmtl Falling Star_b189111c-ffcb-4eb4-a7ab-51c28c45b04c
+Kd 0.388 0.247 0.000
+d 1.000
+newmtl Golem_b8558add-a986-4aca-93b6-91658bb5541d
+Kd 0.600 0.600 0.600
+d 1.000
+newmtl Hudson 2_6d071931-fb0f-43a2-969a-e280f332e2f8
+Kd 0.988 0.827 0.337
+d 1.000
+newmtl Emerald Dream_1d51c8c0-5791-46b4-9102-daf39ddea1b9
+Kd 0.988 0.922 0.890
+d 1.000
+newmtl Hudson_0afcb6ac-2b43-4f73-8c23-e4e3dac6d932
+Kd 0.988 0.922 0.890
+d 1.000
+newmtl Crystal Mist_82c1d4b4-a537-4d9d-86e5-d3bbd083b2c2
+Kd 0.969 0.906 0.875
+d 1.000
+newmtl Day Glow 1_133b2708-ea05-4c22-9401-4a077ce37858
+Kd 0.271 0.220 0.169
+d 1.000
+newmtl Day Glow_b9709f93-cf9f-443e-887a-6defd72ba104
+Kd 0.271 0.220 0.169
+d 1.000
+newmtl Bombay 1_668d3343-71d9-498f-9260-489560f743be
+Kd 0.600 0.600 0.600
+d 1.000
+newmtl Bombay_30d1907e-beda-446a-a3b9-f46dd2dc921c
+Kd 0.600 0.600 0.600
+d 1.000
+newmtl Wellington 1_136fdd75-d39c-4b42-aa4e-dcb6fca5e458
+Kd 0.600 0.600 0.600
+d 1.000
+newmtl Wellington_e2c0737d-7192-4caf-b2a7-475d091baa31
+Kd 0.600 0.600 0.600
+d 1.000
+newmtl Bastille_ec7a681f-f85f-4649-ba71-948374413b86
+Kd 0.549 0.263 0.043
+d 1.000

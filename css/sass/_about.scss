@@ -1,0 +1,42 @@
+
+.webgl2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5%;
+    -moz-column-gap: 5%;
+    column-gap: 5%;
+    height: fit-content;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    background-color: DodgerBlue;
+}
+
+.intro {
+    color: black;
+    z-index: 2;
+    position: absolute;
+    margin-top: 2%;
+    font-size: 1em;
+    display: block;
+    line-height: 150%;
+    width: 500px;
+}
+
+.skills-container {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    margin-top: 40%;
+}
+  
