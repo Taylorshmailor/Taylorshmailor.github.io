@@ -4,6 +4,10 @@ import SplineLoader from '@splinetool/loader';
 import gsap from "gsap";
 import "./css/styles.css"
 
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+
+
 // Scene
 const scene = new THREE.Scene();
 
@@ -134,9 +138,88 @@ window.addEventListener("resize", () => {
   renderer.setSize(sizes.width, sizes.height);
 })
 
+// Scene
+const scene2 = new THREE.Scene();
+
+// Defining a variable for our model 
+var myObj;
+
+//create material for obj
+var mtlLoader = new MTLLoader();
+mtlLoader.load('../vectary/Avatar.mtl',function (materials) {
+  materials.preload();
+
+  // Load the object
+  var objLoader = new OBJLoader();
+  objLoader.setMaterials(materials);
+  objLoader.load('../vectary/Avatar.obj', function (object) {
+    scene2.add(object);
+    myObj = object;
+    myObj.position.x = 350;
+    myObj.position.y = -100;
+  });
+});
+
+// // Create our sphere
+const geometry = new THREE.SphereGeometry(1, 64, 64)
+const material = new THREE.MeshStandardMaterial({
+  color: '#FFFEF4',
+  roughness: 0.5,
+
+})
+const mesh = new THREE.Mesh(geometry, material)
+mesh.receiveShadow = true;
+scene2.add(mesh)
+
+// Sizes
+const sizes2 = {
+  width: window.innerWidth,
+  height: window.innerHeight
+}
+
+console.log(sizes2.width);
+console.log(sizes2.height);
+
+// Camera
+const camera2 = new THREE.PerspectiveCamera(45, sizes2.width / sizes2.height)
+camera2.position.z = 950
+camera2.position.x = 300
+camera2.position.y = 50
+
+
+scene2.add(camera2)
+
+// Render scene onto 
+const canvas2 = document.querySelector('.webgl2')
+//const renderer = new THREE.WebGLRenderer({canvas})
+const renderer2 = new THREE.WebGLRenderer({canvas2})
+renderer2.setSize(sizes2.width, sizes2.height)
+renderer2.setPixelRatio(2)
+renderer2.setClearColor("#FFFFFF")
+renderer2.render(scene2, camera2)
+
+// Controls
+const controls2 = new OrbitControls(camera2, canvas2)
+controls2.enableDamping = true
+controls2.enablePan = false
+controls2.enableZoom = false
+
+// Resize
+window.addEventListener("resize", () => {
+  // Update sizes
+  sizes2.width = window.innerWidth;
+  sizes2.height = window.innerHeight;
+  // Update Camera
+  camera2.updateProjectionMatrix()
+  camera2.aspect = sizes2.width / sizes2.height;
+  renderer2.setSize(sizes2.width, sizes2.height);
+})
+
 const loop = () => {
   controls.update()
   renderer.render(scene, camera);
+  controls2.update()
+  renderer2.render(scene2, camera2);
   window.requestAnimationFrame(loop)
 }
 loop()
