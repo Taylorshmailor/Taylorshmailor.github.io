@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taylor Pham</title>
+    
+    <link rel="icon" href="/assets/hat-ff8f7721.png">
+    <script type="module" crossorigin src="/assets/index-5cd78d70.js"></script>
+    <link rel="stylesheet" href="/assets/index-d2a971c0.css">
+  </head>
+  <body>
+    <nav>
+      <a class="name" href="/">Taylor Pham</a>
+      <ul>
+        <li><a href="/" class="active">Work</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/images/Taylor Pham Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/taylor-pham/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M4.5 6v5m6 0V8.5a2 2 0 1 0-4 0V11V6M4 4.5h1M1.5.5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1Z"/></svg></a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <canvas class="webgl"></canvas>
+      <div>
+          <div class="title container">
+            <span class="text first-text">Hi, I'm Taylor, a</span>
+            <span class="special text sec-text">Front-End Developer</span>
+          </div>
+          <div class="title-2">with a passion for 3D and digital design</div>
+        
+        <p class="experience">
+          Previously worked with 
+          <a class="work" href="https://www.ibm.com/us-en" target="_blank">IBM <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 5 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 19L19 6m0 0v12.48M19 6H6.52"/></svg></a>
+          <a class="work" href="https://credera.com/" target="_blank">Credera <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 5 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 19L19 6m0 0v12.48M19 6H6.52"/></svg></a>
+          <a class="work" href="https://www.fii-foxconn.com/en/index" target="_blank">Fii <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 5 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 19L19 6m0 0v12.48M19 6H6.52"/></svg></a>
+          <br>
+          Graduated from 
+          <a class="work" href="https://www.tamu.edu/" target="_blank">Texas A&M University <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 5 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 19L19 6m0 0v12.48M19 6H6.52"/></svg></a>
+          <br>
+          Feel free to explore & tell me what you think!
+        </p>
+      </div>
+
+      <h1 class="project-heading">Selected Work</h1>
+      <div class="cards">
+        <div class="card">
+          <img class="responsive-img" src="/assets/weather-c0a9419f.png" alt="weather forecaster">
+          <div class="project-desc">
+            <div class="project-title">
+              <a href="#" id="myBtn" class="project-link">Weather Forecaster</a>
+            </div>
+            <div class="project-tools">Web Design, React.js, HTML/CSS, API design</div>
+            <div class="project-details">
+              <p>A single-page application showcasing the average temperature and daily forecast for a given city
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="responsive-img" src="/assets/vr-589a15e6.svg" alt="VR game">
+          <div class="project-desc">
+            <div class="project-title">
+              <a href="#" id="myBtn2" class="project-link">Salsa Shooter</a>
+            </div>
+            <div class="project-tools">Oculus Quest 2, UnrealEngine, Blender, C++</div>
+            <div class="project-details">
+              <p>An interactive virtual reality rhythm game for teaching Puerto Rican culture and Salsa music</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="responsive-img" src="/assets/bridges-e5c3b270.png" alt="bridges">
+          <div class="project-desc">
+            <div class="project-title">
+              <a href="#" id="myBtn3" class="project-link">Bridges</a>
+            </div>
+            <div class="project-tools">UX Design, Case Study</div>
+            <div class="project-details">
+              <p>A mobile translation app aimed to bridge the commucation gap between the deaf and hearing community</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="responsive-img" src="/assets/hat-ff8f7721.png" alt="second case">
+          <div class="project-desc">
+            <div class="project-title">
+              <a href="#" id="myBtn4" class="project-link">second case study</a>
+            </div>
+            <div class="project-tools">UX Design, Case Study</div>
+            <div class="project-details">
+              <p>Redesign of JPMorgan's Chase banking app and customer journey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Project 1 Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <br>
+        <br>
+        <div class="final-product">
+          <img src="/assets/weather-2b7be84f.gif" alt="weather app gif" class="modal-img">
+        </div>
+        <div class="modal-details">
+          <h2 class="project-title">Weather Forecaster</h2>
+          <p class="project-details">
+            A single-page application showcasing the average temperature and daily forecast for a given city
+            so that users can check the weather no matter what city or degrees their location is in.
+          </p>
+          <div class="modal-roles-container">
+            <div>
+              <h3 class="modal-role">
+                Position
+              </h3>
+              <p>Front-end Developer @ Credera</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Project
+              </h3>
+              <p>Internal Recruiment Initiative</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Timeline
+              </h3>
+              <p>7 Days</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Tools Used
+              </h3>
+              <p>Figma</p>
+              <p>React.js</p>
+              <p>Open-Meteo API</p>
+              <p>OpenCage GeoCoding API</p>
+            </div>
+          </div>
+        </div>
+        <div class="impact-section">
+          <div class="modal-details">
+            <h2 class="project-title">Problem Overview</h2>
+            <p>
+              This was support for Credera's internal initiative for hiring front-end developers for their Experienced
+              Design practice. I was tasked with developing and testing the interview assessments that would be given to new graduate and experienced candidates
+              in order to provide feedback from a fresh pair of eyes and a new perspective. 
+            </p>
+            <br>
+            <p style="padding-bottom: 5%;">
+              This task included using React.js and open sourced APIs such as Open-Meteo and OpenCage Geocoding, in order to streamline
+              and filter data when recreating the assesment. I also was tasked with building upon the assessment in order to enhance the experience, 
+              and was challenged with giving feedback on what could be improved, what was challenging, and testing technical issues within the code base.
+            </p>
+          </div>
+        </div>
+        <div class="impact-section" style="background-color: #2f2f2f;">
+          <div class="modal-details">
+            <h2 class="project-title" style="color: #f1f1f1;">My Impact</h2>
+            <ul>
+              <li class="impact-details">
+                Tested and programmed initial interview process (recreating this weather forecaster) for potential Front-end developers through React.js in order to
+                provide feedback on what could be improved, added, or enhanced in the interview process.
+              </li>
+              
+              <li class="impact-details">
+                Provided internal initiatives for improving candidate filtering and led design initiatives aimed 
+                at fostering a seamless onboarding experience for new hires.
+              </li>
+              
+              <li class="impact-details">
+                Built vision, ran user research, and defined product framework using Figma, React.js, and API design.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div id="myModal2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close2">&times;</span>
+        <br>
+        <br>
+        <div class="final-product">
+          <video width="600" height="450" controls style="display: block; margin: 0 auto;">
+            <source src="./images/gameplay.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="modal-details">
+          <h2 class="project-title">Salsa Shooter</h2>
+          <p class="project-details">
+            An interactive virtual reality rhythm game aimed to teach Puerto Rican culture and the influece of Salsa music
+          </p>
+          <div class="modal-roles-container">
+            <div>
+              <h3 class="modal-role">
+                Position
+              </h3>
+              <p>Developer</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Project
+              </h3>
+              <p>VR School Project</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Timeline
+              </h3>
+              <p>April 2022 - May 2022</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Tools Used
+              </h3>
+              <p>Oculus Quest 2</p>
+              <p>Unreal Engine</p>
+              <p>Audio Mixer</p>
+              <p>Blender</p>
+              <p>C++</p>
+            </div>
+          </div>
+        </div>
+        <div class="impact-section">
+          <div class="modal-details">
+            <h2 class="project-title">Problem Overview</h2>
+            <p>
+              Create an immersive and educational virtual reality experience that would teach a cultural aspect from any culture.
+            </p>
+            <br>
+            <p style="padding-bottom: 5%;">
+              This was the final project for my virtual reality class at Texas A&M that focused on Puerto Rican culture and the significance that
+              Salsa and Samba music has in this heritage. 
+            </p>
+          </div>
+        </div>
+        <div class="impact-section" style="background-color: #2f2f2f;">
+          <div class="modal-details">
+            <h2 class="project-title" style="color: #f1f1f1;">My Impact</h2>
+            <ul>
+              <li class="impact-details">
+                Developed and designed game play and game mechanics using C++ in Unreal Engine and the Oculus Quest 2.
+              </li>
+              
+              <li class="impact-details">
+                Pototyped and aided in game environment development and environment testing through Unreal Engine in order to stress test
+                and improve game stability/performance.
+              </li>
+              
+              <li class="impact-details">
+                Researched and integrated audio synchronization and audio mixing into game play in order to accomplish the rhythm playing aspect 
+                and the Salsa/Samba music aspect.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div id="myModal3" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close3">&times;</span>
+        <br>
+        <br>
+        <div class="bridge-product">
+          <img src="./images/preview.png" class="bridges-dim" alt="bridges">
+        </div>
+        <div class="modal-details">
+          <h2 class="project-title">Bridges</h2>
+          <p class="project-details">
+            A mobile application that translates a given spoken langauge into a 
+            given sign langauge and vice-versa, in order to mediate the conversation gap between the deaf and the hearing.
+          </p>
+          <div class="modal-roles-container">
+            <div>
+              <h3 class="modal-role">
+                Position
+              </h3>
+              <p>Product Designer</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Project
+              </h3>
+              <p>Self-Initiative</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Timeline
+              </h3>
+              <p>7 Days</p>
+            </div>
+            <div>
+              <h3 class="modal-role">
+                Tools Used
+              </h3>
+              <p>Figma</p>
+              <p>Adobe Illustrator</p>
+              <p>Spline</p>
+              <p>Vectary</p>
+            </div>
+          </div>
+        </div>
+        <div class="impact-section">
+          <div class="modal-details">
+            <h2 class="project-title">Problem Overview</h2>
+            <p>
+              As the sole designer of this project, I was able to choose a problem at my discretion and decided to 
+              pay attention to the daily issues that the deaf community faces. 
+            </p>
+            <br>
+            <p>
+              For the deaf and sign language community there is limited availability of up-to-date, 
+              high-quality resources that incorporate technological advancements for sign language. 
+              Users often struggle to find accessible and comprehensive tools that keep pace with advancements 
+              in sign language recognition and accurate translation, hindering their ability 
+              to effectively learn and communicate to the outside world. Along with this, there is an existing langauge barrier 
+              between households with deaf children and hearing parents, or vice-versa.
+            </p>
+            <br>
+            <p>
+              I wanted to design a solution that would both mediate this language gap between the deaf and hearing, while
+              also providing a convenient tool for these user's to apply in their daily lives by incorporating machine learning 
+              and computer vision to accurately recognize and interpret a variety of languages in real time.
+            </p>
+            <br>
+            <h2 class="project-title">Design Process</h2>
+            <img src="/assets/Process-1d4efc20.png" class="final-product" alt="design-process" style="padding-bottom: 5%;">
+          </div>
+        </div>
+        <div class="modal-details">
+          <h2 class="project-title">Initial Thinking</h2>
+          <div class="modal-roles-container" style="padding-top: 0;">
+            <div>
+              <h3 class="modal-role" style="font-weight: 400;">
+                Target Users
+              </h3>
+              <ul>
+                <li class="research-bullets">
+                  Users that are deaf or hard of hearing
+                </li>
+                <li class="research-bullets">
+                  Users that are mute
+                </li>
+                <li class="research-bullets">
+                  Users that are hearing and want to communicate with the deaf
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="modal-role" style="font-weight: 400;">
+                Research Methods
+              </h3>
+              <ul>
+                <li class="research-bullets">
+                  Research online
+                </li>
+                <li class="research-bullets">
+                  Competitive analysis
+                </li>
+                <li class="research-bullets">
+                  User interviews
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="impact-section">
+          <div class="modal-details" style="padding-bottom: 1%;">
+            <h2 class="project-title">Desk Research</h2>
+            <p>
+              Scanning research studies and web articles about existing langauge barriers for the deaf community revealed:
+            </p>
+            <ul>
+              <li class="research-bullets">
+                Around 2-3 out of 1000 children are born with a detectable level of hearing loss in one or both ears.
+              </li>
+              <li class="research-bullets">
+                More than 90% of deaf children are born to hearing parents while 5-10% of deaf children are born to deaf parents.
+              </li>
+              <li class="research-bullets">
+                The reality of everyday communication for a deaf child using sign langauge in a hearing family
+                is limited as a common mode of communcation does not exist for many of these families.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-details">
+          <h2 class="project-title">Competitive Analysis</h2>
+            <p>
+              Hand Talk, Pocket Sign, and We Sign were three top competitors I found available in the sign language app market. 
+              Below I will highlight the gaps or pain points that each app has:
+            </p>
+            <img src="/assets/comp-c61e31d9.png" class="final-product" style="margin: 5% 0;" alt="design-process">
+            <p>
+              The competition either presented poor UX, non-intuitive user interface design, or lacked real time video 
+              translation. Many of these were also designated for a 1-to-1 langauge translation rather than being multi-lingual.
+            </p>
+            <br>
+            <p style="margin-bottom: 1%;">
+              The gap?
+            </p>
+            <p style="font-weight: bold; padding-bottom: 1%;">
+              A multi-lingual solution specifically centered around achieving all three modes of sign langauge translation (sign, voice, video).
+            </p>
+            <br>
+        </div>
+        <div class="impact-section">
+          <div class="modal-details" style="padding-bottom: 1%;">
+            <h2 class="project-title">User Interview</h2>
+            <p>
+              I conducted 5 user interviews to learn more about the deaf and hearing community, and how they typically communicate 
+              with those around them in their daily routine. I was able to gather my pool of candidates by visiting my local community 
+              sign langauge school.
+            </p>
+            <br>
+            <p>
+              My recruiment criteria was based off of demographic and behavior. I was looking for an even mix of people who were hard of hearing 
+              or experienced hearing loss and how this affected their lives. I was also looking for users that were mute/deaf, ideally people that 
+              worked full-time jobs or were students, and lastly a small group of people that were hearing. 
+            </p>
+            <br>
+            <p>
+              From these interviews, I wanted to gain more insight on the target users and ensure that I was designing something that would genuinly meet 
+              their needs, rather than something that would only have met my own. 
+            </p>
+            <img src="/assets/user-33b6e02f.png" alt="stickies" class="final-product" style="margin: 5% 0;">
+            <h3 class="modal-role">
+              Research Findings / Pain Points
+            </h3>
+            <ul>
+              <li class="research-bullets">
+                It's challenging to find one common language amongst the hearing and deaf, as not everyone has the time 
+                or means to learn sign langauge. A persistant langauge barrier exists between the two communities. 
+              </li>
+              <li class="research-bullets">
+                Finding a multi-lingual sign language translation app has yet to be created or popularized as many sign langauge apps translate 
+                from a one-to-one basis.
+              </li>
+              <li class="research-bullets">
+                The user interface for many sign langauge apps is not pleasing to the eye or user intutive.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="impact-section" style="background-color: #2f2f2f;">
+          <div class="modal-details">
+            <h2 class="project-title" style="color: #f1f1f1;">Problem Statement</h2>
+            <div class="problem">
+              <img src="/assets/statement-e7fe9d2d.png" class="problem-img" alt="statement">
+            </div>
+          </div>
+        </div>
+        <div class="modal-details" style="padding-bottom: 1%;">
+          <h2 class="project-title">Sketches</h2>
+          <img src="/assets/sketch-0bc97490.png" class="final-product" style="background-color: #ffffff;" alt="sketches">
+        </div>
+        <div class="impact-section">
+          <div class="modal-details" style="padding-bottom: 1%;">
+            <h2 class="project-title">Wireframe</h2>
+            <img src="/assets/wireframe-4be206c9.png" class="final-product" alt="sketches">
+          </div>
+        </div>
+        <div class="impact-section" style="background-color: #2f2f2f;">
+          <div class="modal-details">
+            <h2 class="project-title" style="color: #f1f1f1;">Design Decision</h2>
+            <div class="final-product modal-roles-container" style="background-color: #2f2f2f; padding: 0;">
+              <div>
+                <h3 class="modal-role" style="color: #ffffff;">
+                  Q. What is the most efficient digital platform?
+                </h3>
+                <br>
+                <p style="color: #ffffff;">
+                  A. Mobile Application
+                </p>
+                <br>
+                <p style="color: #ffffff;">
+                  The use of a mobile platform allows for easy and increased accessibility when using the app as it provides  
+                  instant access to the app's services anywhere, anytime. It is an excellent platform for using on the go and aids 
+                  in increasing user app utilization. According to key mobile app statistics, studies show that  70% of all US 
+                  digital media time comes from mobile apps.
+                </p>
+              </div>
+              <div>
+                <img src="/assets/phone-44871b4c.png" class="phone-img" alt="statement">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-details" style="padding-bottom: 1%;">
+          <h2 class="project-title">Visual Identity</h2>
+          <div style="text-align: center;">
+            <img src="/assets/visual-5dc9e6ea.png" class="visual-img" style="background-color: #ffffff; padding-bottom: 5%;" alt="sketches">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 Modal -->
+    <div id="myModal4" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close4">&times;</span>
+        <p>modal 4 !!!1</p>
+      </div>
+
+    </div>
+    
+
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Web Developer";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Front-End Developer";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "UX Designer";
+        }, 8000);
+      }
+
+      textLoad();
+      setInterval(textLoad, 12000);
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      var modal4 = document.getElementById("myModal4");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      var btn2 = document.getElementById("myBtn2");
+      var btn3 = document.getElementById("myBtn3");
+      var btn4 = document.getElementById("myBtn4");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      var span2 = document.getElementsByClassName("close2")[0];
+      var span3 = document.getElementsByClassName("close3")[0];
+      var span4 = document.getElementsByClassName("close4")[0];
+
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      btn2.onclick = function() {
+        modal2.style.display = "block";
+      }
+      btn3.onclick = function() {
+        modal3.style.display = "block";
+      }
+      btn4.onclick = function() {
+        modal4.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      span2.onclick = function() {
+        modal2.style.display = "none";
+      }
+      span3.onclick = function() {
+        modal3.style.display = "none";
+      }
+      span4.onclick = function() {
+        modal4.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+        if (event.target == modal3) {
+          modal3.style.display = "none";
+        }
+        if (event.target == modal4) {
+          modal4.style.display = "none";
+        }
+      }
+    </script>
+   
+    
+  </body>
+</html>
