@@ -146,13 +146,13 @@ var myObj;
 
 //create material for obj
 var mtlLoader = new MTLLoader();
-mtlLoader.load('../vectary/Avatar.mtl',function (materials) {
+mtlLoader.load('./vectary/Avatar.mtl',function (materials) {
   materials.preload();
 
   // Load the object
   var objLoader = new OBJLoader();
   objLoader.setMaterials(materials);
-  objLoader.load('../vectary/Avatar.obj', function (object) {
+  objLoader.load('./vectary/Avatar.obj', function (object) {
     scene2.add(object);
     myObj = object;
     myObj.position.x = 350;
