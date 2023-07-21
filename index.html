@@ -11,8 +11,8 @@
     <nav>
       <a class="name" href="/">Taylor Pham</a>
       <ul>
-        <li><a href="/" class="active">Work</a></li>
-        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="https://drive.google.com/file/d/1GFDqw5f4jWV1mnDHLHdwBIaGugvv8Gvc/view?usp=sharing" target="_blank">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/taylor-pham/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M4.5 6v5m6 0V8.5a2 2 0 1 0-4 0V11V6M4 4.5h1M1.5.5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1Z"/></svg></a></li>
       </ul>
@@ -40,7 +40,7 @@
         </p>
       </div>
 
-      <h1 class="project-heading">Selected Work</h1>
+      <h1 class="project-heading" id="work">Selected Work</h1>
       <div class="cards">
         <div class="card">
           <img class="responsive-img" src="./images/weather.png" alt="weather forecaster">
@@ -95,7 +95,7 @@
     </div>
 
 
-    <div class="main-container">
+    <div class="main-container" id="about">
       <canvas class="webgl2"></canvas>
   
       <div>
@@ -253,10 +253,9 @@
         <br>
         <br>
         <div class="final-product">
-          <video width="600" height="450" controls style="display: block; margin: 0 auto;">
-            <source src="./images/gameplay.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <iframe width="100%" height="450"
+            src="https://www.youtube.com/embed/AQuxxHZWhYk">
+          </iframe>
         </div>
         <div class="modal-details">
           <h2 class="project-title">Salsa Shooter</h2>
@@ -585,6 +584,7 @@
     </div>
     
 
+    <!-- Typing animation -->
     <script>
       const text = document.querySelector(".sec-text");
 
@@ -604,6 +604,7 @@
       setInterval(textLoad, 12000);
     </script>
 
+    <!-- Modal functionality -->
     <script>
       // Get the modal
       var modal = document.getElementById("myModal");

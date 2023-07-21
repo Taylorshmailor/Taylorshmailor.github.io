@@ -8,6 +8,7 @@
 body, html {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .webgl {
@@ -187,8 +188,8 @@ nav ul {
 }
 .webgl2 {
   position: absolute;
-  top: 175%;
-  left: 28%;
+  top: 170%;
+  left: 15%;
 }
 
 .adjust {
@@ -391,6 +392,12 @@ nav ul {
   height: fit-content;
   margin: 10px 0;
   background-color: #f1f1f1;
+}
+
+.video {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .bridge-product {
