@@ -68,9 +68,6 @@ nav ul {
   color: black;
   z-index: 2;
   font-size: 1.5em;
-  //position: absolute;
-  //top: 25%;
-  //transform: translate(56.5%, 30%);
   display: block;
   line-height: 150%;
 }
@@ -80,8 +77,6 @@ nav ul {
   z-index: 2;
   font-size: 1.5em;
   position: absolute;
-  //top: 29%;
-  //transform: translate(55%, 30%);
   display: block;
   line-height: 150%;
   font-weight: bold;
@@ -97,10 +92,8 @@ nav ul {
   color: #787878;
   z-index: 2;
   position: absolute;
-  //top: 36%;
   margin-top: 5%;
   font-size: 1em;
-  //transform: translate(75%, 20%);
   display: block;
   line-height: 200%;
 }
@@ -177,7 +170,7 @@ nav ul {
 
 @media (min-width: 600px) {
   .webgl {
-    transform: scale(1) translate(0, 5%);
+    transform: translate(20%, -10%);
   }
 }
 
@@ -189,6 +182,15 @@ nav ul {
 
 @media (min-width: 1900px) {
   .webgl {
-    transform: translate(-25%, -5%);
+    transform: translate(10%, -12%);
+  }
+  .main-container {
+    margin: 5% 30%;
+  }
+  nav {
+    padding: 4rem 30%;
+  }
+  .experience {
+    margin-top: 2%;
   }
 }

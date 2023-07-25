@@ -173,7 +173,7 @@ nav ul {
 }
 @media (min-width: 600px) {
   .webgl {
-    transform: scale(1) translate(0, 5%);
+    transform: translate(20%, -10%);
   }
 }
 @media (min-width: 1600px) {
@@ -183,7 +183,16 @@ nav ul {
 }
 @media (min-width: 1900px) {
   .webgl {
-    transform: translate(-25%, -5%);
+    transform: translate(10%, -12%);
+  }
+  .main-container {
+    margin: 5% 30%;
+  }
+  nav {
+    padding: 4rem 30%;
+  }
+  .experience {
+    margin-top: 2%;
   }
 }
 .webgl2 {
@@ -233,6 +242,26 @@ nav ul {
   margin-top: 40%;
 }
 
+@media (min-width: 600px) {
+  .webgl2 {
+    top: 190%;
+    left: 30%;
+    transform: scale(1.15);
+  }
+}
+@media (min-width: 1900px) {
+  .webgl2 {
+    top: 165%;
+    left: 15%;
+    transform: scale(1.25);
+  }
+  .adjust {
+    margin-top: 20%;
+  }
+  .skills-container {
+    margin-top: 35%;
+  }
+}
 .project-heading {
   color: black;
   z-index: 2;
@@ -332,6 +361,14 @@ nav ul {
   }
   .project-details {
     font-size: 0.9em;
+  }
+}
+@media (min-width: 1900px) {
+  .project-heading {
+    margin-top: 12%;
+  }
+  .cards {
+    margin-top: 35%;
   }
 }
 /* The Modal (background) */
@@ -479,4 +516,12 @@ nav ul {
 .phone-img {
   width: 170%;
   padding-right: 5%;
+}
+
+.foot-container {
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  margin-top: 10%;
 }/*# sourceMappingURL=styles.css.map */

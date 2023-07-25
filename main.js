@@ -91,11 +91,11 @@ function animate() {
     const offsetY = 0.70; // Adjust the offset value as needed
 
     // Calculate the position based on aspect ratio and offsets
-    const shiftX = offsetX * window.innerWidth * aspectRatio;
-    const shiftY = offsetY * window.innerHeight;
+    // const shiftX = offsetX * window.innerWidth * aspectRatio;
+    // const shiftY = offsetY * window.innerHeight;
 
-    splineScene.position.x = shiftX - window.innerWidth / 2;
-    splineScene.position.y = shiftY - window.innerHeight / 2;
+    // splineScene.position.x = shiftX - window.innerWidth / 2;
+    // splineScene.position.y = shiftY - window.innerHeight / 2;
 
     // Rotate the splineScene around its own center
     splineScene.rotation.y += rotationSpeed * rotationDirection;
@@ -161,6 +161,9 @@ const sizes = {
   width: window.innerWidth,
   height: window.innerHeight
 }
+
+console.log("Width", sizes.width)
+console.log("Height", sizes.height)
 
 scene.add(camera)
 

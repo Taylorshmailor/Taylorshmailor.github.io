@@ -102,3 +102,12 @@
         font-size: 0.90em;
     }
 }
+
+@media (min-width: 1900px) {
+    .project-heading {
+        margin-top: 12%;
+    }
+    .cards {
+        margin-top: 35%;
+    }
+}
